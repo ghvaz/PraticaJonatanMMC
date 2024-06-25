@@ -17,9 +17,11 @@ rl.question('Digite o primeiro numero\n', (num1) => {
             }
             max++
         }while(true)
-
-
-
-        rl.close()
-    })
+            let menor = Math.min(num1, num2)
+            for(let i = menor; i > 0; i--) {
+                if(num1 % i == 0 && num2 % i ==0) {
+                    console.log("MDC: " + i)
+                    break;
+                }
+}})
 })
